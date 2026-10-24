@@ -20,6 +20,7 @@ export function SearchProduct({ products }) {
     // al final se hizo el cambio a number investigando parseint funciona con caracteres al inicio, por tanto no estaba haciendo nada
     return idNumB - idNumA;
   });
+  //agregar que cuando clickeamos un elemento ordene ascendente o lo resetee a descendente
   // agregar la parte de lowercase
   //Segunda practica usar sort para acomodar por ID
   // ESTADO QUE QUIERE MODIFICAR, HANDLER Y COMO QUEREMOS INICIALIZAR

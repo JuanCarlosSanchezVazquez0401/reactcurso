@@ -31,6 +31,18 @@ function App() {
         {/* <GetAllProducts products={allProducts}></GetAllProducts> */}
 
         <div>
+          <h3>Calculadora</h3>
+          <input type="text" />
+          {/* <label htmlFor="">{registro}</label> */}
+          <hr />
+          <button className="counter">Suma</button>
+          <button className="counter">Resta</button>
+          <button className="counter">Multiplicacion</button>
+          <button className="counter">Division</button>
+          {/* <label htmlFor="">{resultado}</label> */}
+        </div>
+
+        <div>
           <label htmlFor="">Contador {count}</label>
 
           <div>
