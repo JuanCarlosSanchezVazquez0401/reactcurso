@@ -13,11 +13,11 @@ export function SearchProduct({ products }) {
     producto.nombre.includes(name)
   );
   const ordenarP = allProducts.sort((a, b) => {
-    // 1. Extraemos y limpiamos el número del id de cada objeto
+    // Extraemos y limpiamos el número del id de cada objeto, replace remplaza P por vacio para dejar solo el numero
     const idNumA = Number(a.id.replace('p', ''));
     const idNumB = Number(b.id.replace('p', ''));
 
-    // 2. Retornamos la resta para ordenarlos de forma descendente
+    // al final se hizo el cambio a number investigando parseint funciona con caracteres al inicio, por tanto no estaba haciendo nada
     return idNumB - idNumA;
   });
   // agregar la parte de lowercase
