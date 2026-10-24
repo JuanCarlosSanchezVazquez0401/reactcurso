@@ -1,0 +1,39 @@
+// import { ProductItem } from './productItem';
+
+// export function GetAllProducts({ products }) {
+//   return (
+//     <div>
+//       {products.map((producto) => (
+//         <ProductItem id={producto.id} producto={producto} />
+//       ))}
+//     </div>
+//   );
+// }
+
+import { ProductItem } from './productItem';
+
+export function GetAllProducts({ products }) {
+  // {products} --- props
+  return (
+    <div>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>nombre</th>
+          <th>precio</th>
+          <th>stock</th>
+          <th>categoria</th>
+        </tr>
+        {products.map((producto) => (
+          <ProductItem
+            id={producto.id}
+            producto={producto.nombre}
+            precio={producto.precio}
+            stock={producto.stock}
+            categoria={producto.categoria}
+          />
+        ))}
+      </table>
+    </div>
+  );
+}
