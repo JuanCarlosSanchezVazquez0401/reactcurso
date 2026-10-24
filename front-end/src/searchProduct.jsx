@@ -11,6 +11,9 @@ export function SearchProduct({ products }) {
   const productoE = products.filter((producto) =>
     producto.nombre.includes(name)
   );
+  const ordenarP = allProducts.sort((a, b) => +b.id - +a.id);
+  // agregar la parte de lowercase
+  //Segunda practica usar sort para acomodar por ID
   // ESTADO QUE QUIERE MODIFICAR, HANDLER Y COMO QUEREMOS INICIALIZAR
   return (
     <>
