@@ -14,8 +14,8 @@ export function SearchProduct({ products }) {
   );
   const ordenarP = allProducts.sort((a, b) => {
     // 1. Extraemos y limpiamos el número del id de cada objeto
-    const idNumA = parseInt(a.id.replace('p', ''));
-    const idNumB = parseInt(b.id.replace('p', ''));
+    const idNumA = Number(a.id.replace('p', ''));
+    const idNumB = Number(b.id.replace('p', ''));
 
     // 2. Retornamos la resta para ordenarlos de forma descendente
     return idNumB - idNumA;
