@@ -27,4 +27,11 @@ export const allProducts = [
     stock: 8,
     categoria: 'Audio',
   },
+  {
+    id: 'p5',
+    nombre: 'Mouse Inalambrico',
+    precio: 280,
+    stock: 8,
+    categoria: 'Audio',
+  },
 ];

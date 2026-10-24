@@ -25,13 +25,18 @@ export function GetAllProducts({ products }) {
           <th>categoria</th>
         </tr>
         {products.map((producto) => (
-          <ProductItem
-            id={producto.id}
-            producto={producto.nombre}
-            precio={producto.precio}
-            stock={producto.stock}
-            categoria={producto.categoria}
-          />
+          <>
+            <p>
+              {producto.nombre === 'Mouse Inalambrico' ? 'Best Choise' : ''}
+            </p>
+            <ProductItem
+              id={producto.id}
+              producto={producto.nombre}
+              precio={producto.precio}
+              stock={producto.stock}
+              categoria={producto.categoria}
+            />
+          </>
         ))}
       </table>
     </div>
