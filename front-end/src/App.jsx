@@ -5,10 +5,12 @@ import viteLogo from './assets/vite.svg';
 import './App.css';
 import { GetAllProducts } from './productList';
 import { allProducts } from './productosMock.js';
+import { SearchProduct } from './searchProduct.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
   const [saludo, setSaludo] = useState('Hola desconocido');
+  // const [name, setName] = useState('');
 
   return (
     <>
@@ -25,7 +27,8 @@ function App() {
           </p>
         </div>
 
-        <GetAllProducts products={allProducts}></GetAllProducts>
+        <SearchProduct products={allProducts}></SearchProduct>
+        {/* <GetAllProducts products={allProducts}></GetAllProducts> */}
 
         <div>
           <label htmlFor="">Contador {count}</label>
