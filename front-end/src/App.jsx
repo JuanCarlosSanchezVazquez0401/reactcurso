@@ -6,6 +6,7 @@ import './App.css';
 import { GetAllProducts } from './productList';
 import { allProducts } from './productosMock.js';
 import { SearchProduct } from './searchProduct.jsx';
+import { Calculadora } from './calculadora.jsx';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -26,22 +27,22 @@ function App() {
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
-
         <SearchProduct products={allProducts}></SearchProduct>
         {/* <GetAllProducts products={allProducts}></GetAllProducts> */}
-
-        <div>
+        {/* <div>
           <h3>Calculadora</h3>
           <input type="text" />
-          {/* <label htmlFor="">{registro}</label> */}
+          
           <hr />
           <button className="counter">Suma</button>
           <button className="counter">Resta</button>
           <button className="counter">Multiplicacion</button>
           <button className="counter">Division</button>
-          {/* <label htmlFor="">{resultado}</label> */}
-        </div>
-
+          
+        </div> */}
+        {/* <label htmlFor="">{registro}</label> */}
+        {/* <label htmlFor="">{resultado}</label> */}
+        <Calculadora />
         <div>
           <label htmlFor="">Contador {count}</label>
 
